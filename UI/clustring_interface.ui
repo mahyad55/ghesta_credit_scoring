@@ -51,7 +51,8 @@
        <item>
         <widget class="QFrame" name="frame_3">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
          </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -466,7 +467,7 @@ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
              </layout>
             </item>
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,2,1">
+             <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,2,2,1">
               <item>
                <spacer name="horizontalSpacer_3">
                 <property name="orientation">
@@ -513,7 +514,44 @@ QPushButton:default {
 }</string>
                 </property>
                 <property name="text">
-                 <string>مشاهده نتایج</string>
+                 <string>خوشه بندی</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_import_3">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f6f7fa, stop: 1 #dadbde);
+    min-width: 80px;
+	min-height:30px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}
+
+QPushButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+QPushButton:default {
+    border-color: navy; /* make the default button prominent */
+}</string>
+                </property>
+                <property name="text">
+                 <string> Elbow نمودار </string>
                 </property>
                </widget>
               </item>
@@ -614,7 +652,8 @@ QPushButton:default {
     <item>
      <widget class="QFrame" name="frame_5">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
